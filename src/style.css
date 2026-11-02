@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+}
+
+html, body { margin: 0; overflow: hidden; }
+canvas { display: block; touch-action: none; }
+button { min-height: 44px; cursor: pointer; }
+button:disabled { cursor: wait; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #223c43; outline-offset: 3px; }
+input[type="range"] { accent-color: #486c57; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
